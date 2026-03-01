@@ -1,0 +1,4 @@
+{{- /* Google Analytics partial - stub to prevent template errors */ -}}
+{{- if and .Site.Params.googleAnalyticsID (eq hugo.Environment "production") -}}
+<!-- Google Analytics would go here if enabled -->
+{{- end -}}
