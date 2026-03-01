@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: blacklines-website
+    buildCommand: hugo
+    publishPath: public
+    envVars:
+      - key: HUGO_VERSION
+        value: "0.157.0"
