@@ -1,0 +1,131 @@
+{{ define "main" }}
+<div class="sketchnotes-container">
+  <header class="section-header">
+    <h1>Sketchnotes & Urban Sketches</h1>
+    <p class="section-description">Visual observations and hand-drawn notes</p>
+  </header>
+
+  <div class="sketches-gallery">
+    {{- range .Pages }}
+    <article class="sketch-card">
+      {{- if .Params.featured_image }}
+      <div class="sketch-image">
+        <a href="{{ .Permalink }}">
+          <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" />
+        </a>
+      </div>
+      {{- else if .Params.images }}
+      <div class="sketch-image">
+        <a href="{{ .Permalink }}">
+          <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" />
+        </a>
+      </div>
+      {{- end }}
+      <div class="sketch-content">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="sketch-date">{{ .Date.Format "January 2, 2006" }}</p>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</div>
+
+<style>
+.sketchnotes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.sketches-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.sketch-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--code-bg);
+  transition: transform 0.2s ease;
+}
+
+.sketch-card:hover {
+  transform: translateY(-4px);
+}
+
+.sketch-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.sketch-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sketch-card:hover .sketch-image img {
+  transform: scale(1.05);
+}
+
+.sketch-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sketch-content {
+  padding: 1rem;
+}
+
+.sketch-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.sketch-card h2 a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.sketch-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.sketch-date {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--tertiary);
+}
+
+@media (max-width: 768px) {
+  .sketches-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .section-header h1 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+{{ end }}

@@ -1,0 +1,65 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --gc --minify
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: public
+          path: public/
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: public
+          path: public/
+
+      - name: Deploy to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+        run: |
+          # Trigger deployment using Render's webhook
+          curl -X POST "https://api.render.com/deploy/srv-$RENDER_SERVICE_ID?key=$RENDER_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "{}"
+
+      - name: Verify deployment
+        run: |
+          echo "Deployment triggered successfully"
+          echo "Check your Render dashboard for deployment status"

@@ -1,0 +1,42 @@
+# Hugo
+/public/
+/resources/
+*.swp
+*.swo
+*~
+
+# Node modules (if using any build tools)
+/node_modules/
+npm-debug.log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Build cache
+/dist/
+/.cache/
+
+# Hugo cache
+/resources/_gen/
+
+# AI Agent
+.claude/
+.github/skills/
+.github/prompts/

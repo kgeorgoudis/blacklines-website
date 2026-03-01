@@ -1,0 +1,24 @@
+baseURL = 'https://www.blacklines.gr/'
+languageCode = 'en-us'
+title = 'Blacklines - website'
+theme = 'papermod'
+outputs.home = ['HTML', 'RSS']
+
+[params]
+description = 'A portfolio showcasing DIY projects, sketchnotes, and DevOps posts'
+author = 'Your Name'
+
+[[menu.main]]
+name = 'DIY'
+url = '/diy/'
+weight = 1
+
+[[menu.main]]
+name = 'Sketchnotes'
+url = '/sketchnotes/'
+weight = 2
+
+[[menu.main]]
+name = 'DevOps'
+url = '/devops/'
+weight = 3
