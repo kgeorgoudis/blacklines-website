@@ -7,6 +7,7 @@ outputs.home = ['HTML', 'RSS']
 [params]
 description = 'A portfolio showcasing DIY projects, sketchnotes, and DevOps posts'
 author = 'Your Name'
+googleAnalyticsID = ""
 
 [[menu.main]]
 name = 'DIY'
