@@ -1,13 +1,12 @@
 baseURL = 'https://www.blacklines.gr/'
 languageCode = 'en-us'
-title = 'Blacklines - website'
-theme = 'papermod'
-outputs.home = ['HTML', 'RSS']
+title = 'Blacklines - Portfolio'
+theme = 'book'
 
 [params]
 description = 'A portfolio showcasing DIY projects, sketchnotes, and DevOps posts'
 author = 'Your Name'
-googleAnalyticsID = ""
+themeVariant = "auto"
 
 [[menu.main]]
 name = 'DIY'
