@@ -1,0 +1,44 @@
+{{- /* Display category sections with icons on homepage */ -}}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+  {{- range where .Site.Pages "Section" "diy" }}
+    {{- if .IsSection }}
+  <div style="padding: 1.5rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--code-bg); text-align: center;">
+    {{- if .Params.icon }}
+    <div style="font-size: 3rem; margin-bottom: 1rem;">{{ .Params.icon }}</div>
+    {{- end }}
+    <h2 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">
+      <a href="{{ .Permalink }}" style="text-decoration: none; color: var(--accent);">{{ .Title }}</a>
+    </h2>
+    <p style="margin: 0; color: var(--secondary);">{{ .Params.description }}</p>
+  </div>
+    {{- end }}
+  {{- end }}
+
+  {{- range where .Site.Pages "Section" "sketchnotes" }}
+    {{- if .IsSection }}
+  <div style="padding: 1.5rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--code-bg); text-align: center;">
+    {{- if .Params.icon }}
+    <div style="font-size: 3rem; margin-bottom: 1rem;">{{ .Params.icon }}</div>
+    {{- end }}
+    <h2 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">
+      <a href="{{ .Permalink }}" style="text-decoration: none; color: var(--accent);">{{ .Title }}</a>
+    </h2>
+    <p style="margin: 0; color: var(--secondary);">{{ .Params.description }}</p>
+  </div>
+    {{- end }}
+  {{- end }}
+
+  {{- range where .Site.Pages "Section" "devops" }}
+    {{- if .IsSection }}
+  <div style="padding: 1.5rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--code-bg); text-align: center;">
+    {{- if .Params.icon }}
+    <div style="font-size: 3rem; margin-bottom: 1rem;">{{ .Params.icon }}</div>
+    {{- end }}
+    <h2 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">
+      <a href="{{ .Permalink }}" style="text-decoration: none; color: var(--accent);">{{ .Title }}</a>
+    </h2>
+    <p style="margin: 0; color: var(--secondary);">{{ .Params.description }}</p>
+  </div>
+    {{- end }}
+  {{- end }}
+</div>
