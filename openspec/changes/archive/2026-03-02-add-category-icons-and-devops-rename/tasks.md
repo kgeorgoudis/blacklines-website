@@ -34,6 +34,6 @@
 
 ## 6. Commit and Deploy
 
-- [ ] 6.1 Commit all changes (`content/*/\_index.md`, `layouts/partials/`, `hugo.toml` if updated) with a descriptive message
-- [ ] 6.2 Push to GitHub to trigger Cloudflare Pages redeploy
-- [ ] 6.3 Verify live site at `https://www.blacklines.gr/` displays icons correctly
+- [x] 6.1 Commit all changes (`content/*/\_index.md`, `layouts/partials/`, `hugo.toml` if updated) with a descriptive message
+- [x] 6.2 Push to GitHub to trigger Cloudflare Pages redeploy
+- [x] 6.3 Verify live site at `https://www.blacklines.gr/` displays icons correctly

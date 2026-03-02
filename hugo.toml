@@ -1,6 +1,6 @@
 baseURL = 'https://www.blacklines.gr/'
 languageCode = 'en-us'
-title = 'Blacklines - Portfolio'
+title = 'Blacklines - Website'
 
 [module]
   [[module.imports]]
@@ -10,13 +10,13 @@ title = 'Blacklines - Portfolio'
   description = 'A portfolio showcasing DIY projects, sketchnotes, and DevOps posts'
 
   # Blowfish appearance
-  colorScheme = "ocean"
+  colorScheme = "fire"
   defaultAppearance = "auto"    # auto = follow OS dark/light preference
 
   # Site-wide defaults — avoids needing these in every post's front matter
   showToc = false
-  showReadingTime = false
-  showWordCount = false
+  showReadingTime = true
+  showWordCount = true
   showBreadcrumbs = true
   showDate = true
   showAuthor = false
@@ -27,7 +27,7 @@ title = 'Blacklines - Portfolio'
   showRecent = false
 
 [params.author]
-  name = "Your Name"
+  name = "Konstantinos Georgoudis"
 
 [[menu.main]]
 name = 'DIY'
