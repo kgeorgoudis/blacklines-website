@@ -29,6 +29,12 @@ title = 'Blacklines - Website'
 [params.author]
   name = "Konstantinos Georgoudis"
 
+[params.social]
+  linkedin = "https://www.linkedin.com/in/kgeor/"
+  instagram = "https://www.instagram.com/k.georgoudis/"
+  substack = "https://kgeor.substack.com/"
+  email = "kgeor@blacklines.gr"
+
 [[menu.main]]
 name = 'DIY'
 url = '/diy/'
