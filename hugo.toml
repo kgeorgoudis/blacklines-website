@@ -2,6 +2,9 @@ baseURL = 'https://www.blacklines.gr/'
 languageCode = 'en-us'
 title = 'Blacklines - Website'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [module]
   [[module.imports]]
     path = "github.com/nunocoracao/blowfish/v2"
