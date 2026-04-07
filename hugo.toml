@@ -1,54 +1,60 @@
 baseURL = 'https://www.blacklines.gr/'
 languageCode = 'en-us'
-title = 'Blacklines - Website'
+title = 'Blacklines'
+theme = 'PaperMod'
 
 [markup.goldmark.renderer]
   unsafe = true
 
-[module]
-  [[module.imports]]
-    path = "github.com/nunocoracao/blowfish/v2"
-
 [params]
-  description = 'A portfolio showcasing DIY projects, sketchnotes, and DevOps posts'
+  defaultTheme = "auto"
+  description = "A portfolio showcasing DIY projects, sketchnotes, and DevOps posts"
+  author = "Konstantinos Georgoudis"
 
-  # Blowfish appearance
-  colorScheme = "fire"
-  defaultAppearance = "auto"    # auto = follow OS dark/light preference
+  [params.homeInfoParams]
+    Title = "Hi, I'm Konstantinos"
+    Content = """
+<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+  <img src="/images/profile.jpeg" alt="Konstantinos Georgoudis" style="width: 140px; height: 140px; object-fit: cover; object-position: center top; border-radius: 50%; flex-shrink: 0;">
+  <div style="line-height: 1.8;">
+    <div><strong>Konstantinos Georgoudis</strong></div>
+    <div>Born 1981</div>
+    <div>Athens, Greece</div>
+  </div>
+</div>
 
-  # Site-wide defaults — avoids needing these in every post's front matter
-  showToc = false
-  showReadingTime = true
-  showWordCount = true
-  showBreadcrumbs = true
-  showDate = true
-  showAuthor = false
-  groupByYear = false
+I have always been drawn to how things work, starting with my dad's workbench repairing old TVs, through HVAC systems and early computers, all the way to managing infrastructure and crafting furniture on my balcony. The tools change, but the curiosity stays the same.
 
-[params.homepage]
-  layout = "page"
-  showRecent = false
+This is where I share the three things that keep me busy outside of work hours: woodworking and DIY projects built with my hands, sketchnotes and urban sketches I make with pen and watercolor, and technical writing about DevOps and the systems I work with.
+"""
 
-[params.author]
-  name = "Konstantinos Georgoudis"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/kgeor/"
 
-[params.social]
-  linkedin = "https://www.linkedin.com/in/kgeor/"
-  instagram = "https://www.instagram.com/k.georgoudis/"
-  substack = "https://kgeor.substack.com/"
-  email = "kgeor@blacklines.gr"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/k.georgoudis/"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "https://kgeor.substack.com/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:kgeor@blacklines.gr"
 
 [[menu.main]]
-name = 'DIY'
-url = '/diy/'
-weight = 1
+  name = 'DIY'
+  url = '/diy/'
+  weight = 1
 
 [[menu.main]]
-name = 'Sketchnotes'
-url = '/sketchnotes/'
-weight = 2
+  name = 'Sketchnotes'
+  url = '/sketchnotes/'
+  weight = 2
 
 [[menu.main]]
-name = 'DevOps'
-url = '/devops/'
-weight = 3
+  name = 'DevOps'
+  url = '/devops/'
+  weight = 3
