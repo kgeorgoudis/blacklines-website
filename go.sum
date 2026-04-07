@@ -2,3 +2,5 @@ github.com/1bl4z3r/hermit-V2 v1.1.30 h1:H2Gl471W81NpMdbdBO33S0CJXo5o/FYy+0k5npLv
 github.com/1bl4z3r/hermit-V2 v1.1.30/go.mod h1:jzBra4Jey2XWE2vYCkCqttBP3KxwFXpQMK0cBcsbO04=
 github.com/nunocoracao/blowfish/v2 v2.98.0 h1:2k/f19NwAlhEIq08WOOgbYB4LlzWF2YEhoDoflSH0eU=
 github.com/nunocoracao/blowfish/v2 v2.98.0/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=
+github.com/nunocoracao/blowfish/v2 v2.101.0 h1:nis5qMDPm+6NqsgxdOAXEXQZqk61hiCqTRczwLlxThc=
+github.com/nunocoracao/blowfish/v2 v2.101.0/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=
