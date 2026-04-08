@@ -1,5 +1,5 @@
 ---
-title: "Benefits of SLOs"
+title: "Benefits of SLOs webinar"
 description: "Why SLOs matter — reliability as a feature, error budgets, SLIs, and using SLOs for retrospectives."
 date: 2025-02-19
 draft: false

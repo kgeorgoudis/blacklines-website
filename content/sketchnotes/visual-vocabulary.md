@@ -1,9 +1,9 @@
 ---
 title: "Visual Vocabulary"
-description: "A personal icon library in black and gold — everyday objects, tech devices, and abstract concepts reduced to simple marks."
+description: "A personal icon library in black and yellow — everyday objects, tech devices, and abstract concepts reduced to simple marks."
 date: 2024-04-01
 draft: false
-categories: ["Urban Sketches"]
+categories: ["Sketchnotes"]
 params:
   image: "/images/sketchnotes/visual-vocabulary.jpeg"
 ---

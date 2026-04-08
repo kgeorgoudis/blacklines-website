@@ -1,9 +1,9 @@
 ---
 title: "Technical Skills"
-description: "A bouquet of tech — terminal, Go gopher, cloud, and a honeybee — illustrating the mix of skills a DevOps engineer grows."
+description: "A bouquet of tech — unix, programming languages, cloud, and other technologies — illustrating the mix of skills a DevOps engineer grows."
 date: 2024-06-15
 draft: false
-categories: ["Urban Sketches"]
+categories: ["Sketchnotes"]
 params:
   image: "/images/sketchnotes/technical-skills.jpeg"
 ---

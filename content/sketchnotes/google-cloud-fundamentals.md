@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Fundamentals"
+title: "Google Cloud Fundamentals training course"
 description: "Key concepts from GCP fundamentals — regions, compute, storage, VPC networks, and service accounts."
 date: 2023-10-18
 draft: false

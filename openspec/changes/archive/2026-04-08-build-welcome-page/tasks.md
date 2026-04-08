@@ -6,5 +6,5 @@
 
 ## 2. Verify Layout
 
-- [ ] 2.1 Build the site locally (`hugo server`) and confirm the welcome text renders above the section cards
-- [ ] 2.2 Check that both the welcome text and section card titles are visible above the fold on a standard desktop viewport
+- [x] 2.1 Build the site locally (`hugo server`) and confirm the welcome text renders above the section cards
+- [x] 2.2 Check that both the welcome text and section card titles are visible above the fold on a standard desktop viewport
