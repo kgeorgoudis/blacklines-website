@@ -1,4 +1,4 @@
-baseURL = 'https://www.blacklines.gr/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Blacklines'
 theme = 'PaperMod'
@@ -10,6 +10,7 @@ theme = 'PaperMod'
   defaultTheme = "auto"
   description = "A portfolio showcasing DIY projects, sketchnotes, and DevOps posts"
   author = "Konstantinos Georgoudis"
+  mainSections = []
 
   [params.homeInfoParams]
     Title = "Hi, I'm Konstantinos"
